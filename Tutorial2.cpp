@@ -38,6 +38,7 @@
 
 using namespace base;
 using ::std::cout;
+using ::std::endl;
 using ::std::make_unique;
 using ::std::unique_ptr;
 using ::std::vector;
