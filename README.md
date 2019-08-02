@@ -42,9 +42,9 @@ To get started include **base_window.h** (if you only want windowing), or **base
       /* Check if the left mouse was clicked and report its values if so.
          Mouse coordinates range from [-1, 1] with (0, 0) being the center
          of the screen. */
-      if (event.switch_index == ::base::kInputMouseLeftButtonIndex) {
-        ::std::cout << "Left mouse " << (event.is_on ? "down" : "up") << " @ "
-                    << event.target_x << ", " << event.target_y << ::std::endl;
+      if (event.switch_index == kInputMouseLeftButtonIndex) {
+        cout << "Left mouse " << (event.is_on ? "down" : "up") << " @ "
+             << event.target_x << ", " << event.target_y << ::std::endl;
       }
     }
 
