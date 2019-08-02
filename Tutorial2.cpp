@@ -64,7 +64,7 @@ int main(int argc, char** argv) {
          of the screen. */
       if (event.switch_index == kInputMouseLeftButtonIndex) {
         cout << "Left mouse " << (event.is_on ? "down" : "up") << " @ "
-             << event.target_x << ", " << event.target_y << ::std::endl;
+             << event.target_x << ", " << event.target_y << endl;
       }
     }
 

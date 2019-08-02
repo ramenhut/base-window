@@ -44,7 +44,7 @@ To get started include **base_window.h** (if you only want windowing), or **base
          of the screen. */
       if (event.switch_index == kInputMouseLeftButtonIndex) {
         cout << "Left mouse " << (event.is_on ? "down" : "up") << " @ "
-             << event.target_x << ", " << event.target_y << ::std::endl;
+             << event.target_x << ", " << event.target_y << endl;
       }
     }
 
