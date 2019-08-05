@@ -32,6 +32,7 @@
 #ifndef __BASE_WINDOW_H__
 #define __BASE_WINDOW_H__
 
+#include <cstdint>
 #include <string>
 #include <vector>
 
@@ -53,26 +54,14 @@
 
 namespace base {
 
-#if defined(BASE_PLATFORM_WINDOWS)
-typedef INT64 int64;
-typedef INT32 int32;
-typedef INT16 int16;
-typedef INT8 int8;
-typedef UINT64 uint64;
-typedef UINT32 uint32;
-typedef UINT16 uint16;
-typedef UINT8 uint8;
-#elif defined(BASE_PLATFORM_MACOS)
 typedef int64_t int64;
 typedef int32_t int32;
 typedef int16_t int16;
 typedef int8_t int8;
-typedef u_int64_t uint64;
-typedef u_int32_t uint32;
-typedef u_int16_t uint16;
-typedef u_int8_t uint8;
-#endif
-
+typedef int64_t uint64;
+typedef uint32_t uint32;
+typedef uint16_t uint16;
+typedef uint8_t uint8;
 typedef float float32;
 typedef double float64;
 
